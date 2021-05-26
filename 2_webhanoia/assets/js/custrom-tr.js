@@ -38,6 +38,23 @@ $(document).ready(function(){
     return false;
   });
 
+  var crl1 = circlr('circlr1', {
+    scroll : true,
+    loader : 'loader1'
+  });
+  var crl = circlr('circlr', {
+    scroll : true,
+    loader : 'loader'
+  });
+  
+  var crl2 = circlr('circlr2', {
+    scroll : true,
+    loader : 'loader2'
+  });
+  var crl3 = circlr('circlr3', {
+    scroll : true,
+    loader : 'loader3'
+  });
 
 });
 
