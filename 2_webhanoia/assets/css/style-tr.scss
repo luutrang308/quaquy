@@ -47,6 +47,33 @@ body {
 	font-family: Poppins;
 }
 
+.section_header.active_child_page {
+	.header_pc {
+		background: #002e40f2;
+		display: flex;
+	    flex-flow: row wrap;
+	    justify-content: space-between;
+	    align-items: center;
+	    padding: 0 50px;
+	    z-index: 100;
+	    .logo_page {
+	    	width: auto;
+	    }
+	    .menu_page {
+	    	width: auto;
+	    	padding: 0;
+	    }
+	    .boxlinkpage {
+	    	position: initial;
+		    right: inherit;
+		    top: inherit;
+	    }
+	    .item_submenu {
+	    	top: 70px !important;
+	    }
+	}
+}
+
 .header_pc {
 	position: fixed;
     width: 100%;
@@ -188,6 +215,7 @@ body {
 	    justify-content: space-between;
 	    align-items: center;
 	    padding: 0 50px;
+	    z-index: 100;
 	    .logo_page {
 	    	width: auto;
 	    }
@@ -362,6 +390,7 @@ body {
     padding: 80px 0 15px 0;
     a {
     	color: #fff;
+    	font-family: 'Open Sans', sans-serif;
     }
     .row {
     	display: flex;
@@ -370,6 +399,9 @@ body {
     }
     .item_footer {
     	width: 20%;
+    	p {
+    		font-family: 'Open Sans', sans-serif;
+    	}
     	&:nth-child(1) {
     		width: 40%;
     		padding-right: 30px;
@@ -405,6 +437,7 @@ body {
     			margin-bottom: 8px;
     			a {
     				font-size: 16px;
+    				font-family: 'Open Sans', sans-serif;
     			}
     			h2 {
     				font-size: 16px;
@@ -575,6 +608,7 @@ body {
 				    margin: 10px 0;
 				}
 				.btn_cart {
+					text-transform: inherit;
 					margin-top: 1em;
 				    display: inline-block;
 				    padding: 10px 15px;
@@ -586,19 +620,16 @@ body {
 				    font-size: 0.9em;
 				    font-weight: 300;
 				    position: relative;
-				    font-family: OpenSans;
+				    font-family: 'Open Sans', sans-serif;
 				    border: none;
 				    display: flex;
 				    justify-content: center;
 				    align-items: center;
 				    margin: auto;
 				    transition: 0.5s;
+				    width: 150px;
 				    &:hover {
 				    	background: linear-gradient(0deg, #185973, #1b607c, #1d6684);
-				    }
-				    img {
-				    	width: 15px;
-					    margin-right: 10px;
 				    }
 				}
 			}

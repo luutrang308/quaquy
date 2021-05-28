@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -24,7 +26,7 @@
 <body>
 
 
-<div class="section_header">
+<div class="section_header active_child_page">
     <div class="header_pc">
         <a href="" class="logo_page" title="">
             <img src="./assets/img/logo.png" alt="">
@@ -89,23 +91,21 @@
                     <img data-src="./assets/img/13.jpg">
                     <img data-src="./assets/img/14.jpg">
                     <img data-src="./assets/img/15.jpg">
-                    <div id="loader"></div>
                 </div>
             </div>
 
             <div class="info_product">
                 <label>Engravable</label>
                 <a href="" title=""> VIGOR ROUND BOX </a>
-                <button class="btn_cart">
-                    <img src="./assets/img/cart1.png">
-                    Add to cart
-                </button>
+                <a href="" title="" class="btn_cart">
+                    Xem chi tiết
+                </a>
             </div>
         </div>
 
         <div class="product_item">
             <div class="img_product">
-                <div id="circlr1">
+                <div id="circlr">
                     <img data-src="./assets/img/00.jpg">
                     <img data-src="./assets/img/01.jpg">
                     <img data-src="./assets/img/02.jpg">
@@ -122,23 +122,21 @@
                     <img data-src="./assets/img/13.jpg">
                     <img data-src="./assets/img/14.jpg">
                     <img data-src="./assets/img/15.jpg">
-                    <div id="loader1"></div>
                 </div>
             </div>
 
             <div class="info_product">
                 <label>Engravable</label>
                 <a href="" title=""> VIGOR ROUND BOX </a>
-                <button class="btn_cart">
-                    <img src="./assets/img/cart1.png">
-                    Add to cart
-                </button>
+                <a href="" title="" class="btn_cart">
+                    Xem chi tiết
+                </a>
             </div>
         </div>
 
         <div class="product_item">
             <div class="img_product">
-                <div id="circlr2">
+                <div id="circlr">
                     <img data-src="./assets/img/00.jpg">
                     <img data-src="./assets/img/01.jpg">
                     <img data-src="./assets/img/02.jpg">
@@ -155,23 +153,21 @@
                     <img data-src="./assets/img/13.jpg">
                     <img data-src="./assets/img/14.jpg">
                     <img data-src="./assets/img/15.jpg">
-                    <div id="loader2"></div>
                 </div>
             </div>
 
             <div class="info_product">
                 <label>Engravable</label>
                 <a href="" title=""> VIGOR ROUND BOX </a>
-                <button class="btn_cart">
-                    <img src="./assets/img/cart1.png">
-                    Add to cart
-                </button>
+                <a href="" title="" class="btn_cart">
+                    Xem chi tiết
+                </a>
             </div>
         </div>
 
         <div class="product_item">
             <div class="img_product">
-                <div id="circlr3">
+                <div id="circlr">
                     <img data-src="./assets/img/00.jpg">
                     <img data-src="./assets/img/01.jpg">
                     <img data-src="./assets/img/02.jpg">
@@ -188,17 +184,15 @@
                     <img data-src="./assets/img/13.jpg">
                     <img data-src="./assets/img/14.jpg">
                     <img data-src="./assets/img/15.jpg">
-                    <div id="loader3"></div>
                 </div>
             </div>
 
             <div class="info_product">
                 <label>Engravable</label>
                 <a href="" title=""> VIGOR ROUND BOX </a>
-                <button class="btn_cart">
-                    <img src="./assets/img/cart1.png">
-                    Add to cart
-                </button>
+                <a href="" title="" class="btn_cart">
+                    Xem chi tiết
+                </a>
             </div>
         </div>
 
@@ -265,6 +259,28 @@
 <script type="text/javascript" src="./assets/js/fix.js"></script>
 <script type="text/javascript" src="./assets/js/pixi.js"></script>
 <script src="./assets/js/circlr.min.js" type="text/javascript"></script>
+<script>
+
+    $(document).ready(function(){
+        /*var crl1 = circlr('circlr', {
+            scroll : true,
+            loader : 'loader1'
+          });*/
+        var crl = circlr('circlr', {
+            scroll : true,
+        });
+      
+        /*var crl2 = circlr('circlr', {
+            scroll : true,
+        });
+        var crl3 = circlr('circlr', {
+            scroll : true,
+        });*/
+    })
+    
+</script>
+
+
 
 </body>
 </html>
