@@ -87,6 +87,10 @@ $(document).ready(function(){
     autoplay: true,
   });
 
+  $('.btn_close').click(function() {
+    $('.form_item').toggleClass('active');
+  })
+
 
 
 
