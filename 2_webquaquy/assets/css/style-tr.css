@@ -252,7 +252,7 @@ body {
 }
 .header_pc .boxlinkpage > span p {
   color: #fff;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .header_pc.no_fixed {
