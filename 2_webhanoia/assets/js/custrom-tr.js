@@ -38,20 +38,6 @@ $(document).ready(function(){
     return false;
   });
 
-  //var crl1 = circlr('circlr1', {
-    //scroll : true,
-    /*loader : 'loader1'*/
-  //});
-  /*var crl = circlr('circlr', {
-    scroll : true,
-  });
-  
-  var crl2 = circlr('circlr2', {
-    scroll : true,
-  });
-  var crl3 = circlr('circlr3', {
-    scroll : true,
-  });*/
 
   $('.slider_for_pro').slick({
     slidesToShow: 1,
@@ -88,7 +74,7 @@ $(document).ready(function(){
   });
 
   $('.btn_close').click(function() {
-    $('.form_item').toggleClass('active');
+    $('.form_item').removeClass('active');
   })
 
 

@@ -101,6 +101,7 @@ body {
   position: absolute;
   right: 0;
   top: 30px;
+  z-index: 1;
 }
 .header_pc .boxlinkpage .form_item .search_hp .btn_search {
   position: absolute;
@@ -241,7 +242,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  top: 171px;
+  top: 150px;
   opacity: 1;
   transition: 0.5s;
 }
@@ -264,6 +265,7 @@ body {
 }
 .menu_page .main_menu li .item_submenu .item {
   width: 205px;
+  text-align: left;
 }
 .menu_page .main_menu li .item_submenu .item h2 {
   font-size: 14px;
@@ -631,25 +633,27 @@ body {
   font-size: 48px;
   margin: 0;
   line-height: 1;
+  text-transform: uppercase;
+  color: #80807f;
 }
 .section_list_product .element_list_product {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   width: 100%;
   margin: 60px 0;
   padding: 60px 0;
-  border-top: 1px dashed #000;
+  border-top: 1px dashed #80807f;
 }
 .section_list_product .element_list_product .product_item {
-  width: 25%;
+  width: 25% !important;
   padding: 25px 0;
   transition: 0.5s;
-}
-.section_list_product .element_list_product .product_item:hover {
-  box-shadow: 1px 5px 15px #006ba114;
-  z-index: 1;
+  /*&:hover {
+  	box-shadow: 1px 5px 15px #006ba114;
+  	z-index: 1;
+  }*/
 }
 .section_list_product .element_list_product .product_item .img_product {
   width: 100%;
@@ -660,6 +664,9 @@ body {
 }
 .section_list_product .element_list_product .product_item .img_product #circlr {
   width: 100%;
+}
+.section_list_product .element_list_product .product_item .img_product:hover {
+  cursor: pointer;
 }
 .section_list_product .element_list_product .product_item .info_product {
   width: 100%;
@@ -721,7 +728,7 @@ body {
 
 .element_breadcrumd {
   padding: 20px 50px 50px 50px;
-  border-bottom: 1px dashed #000;
+  border-bottom: 1px dashed #80807f;
 }
 .element_breadcrumd a {
   font-family: "OpenSans", sans-serif;
@@ -829,7 +836,7 @@ body {
 }
 .info_pro .short_descriptin {
   margin-top: 30px;
-  border-top: 1px dashed #000;
+  border-top: 1px dashed #80807f;
   padding-top: 30px;
 }
 .info_pro .short_descriptin h3 {
@@ -898,7 +905,7 @@ body {
 }
 
 .relate_product {
-  border-top: 1px dashed #000;
+  border-top: 1px dashed #80807f;
   padding: 60px 0 400px 0;
 }
 
@@ -1125,4 +1132,19 @@ body {
   .site36_form_col12_dkynhanthongtin .form_contact .title_basic h2 {
     font-size: 24px;
   }
+}
+.site34_icon_col12_iconlienhe {
+  position: fixed;
+  right: 97px;
+  bottom: 150px;
+  display: grid;
+  z-index: 50;
+}
+.site34_icon_col12_iconlienhe a {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+}
+.site34_icon_col12_iconlienhe a img {
+  max-width: 100%;
 }
