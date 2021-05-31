@@ -591,7 +591,7 @@ body {
 
 .icon-link {
     position: fixed;
-    right: 5%;
+    right: 0;
     outline: none;
     cursor: pointer;
     width: 48px;
@@ -599,7 +599,7 @@ body {
     border: 1px solid #fff;
     background: #050e1a;
     border-radius: 50%;
-    bottom: 100px;
+    bottom: 50px;
     img {
     	position: absolute;
 	    top: 50%;
@@ -1171,16 +1171,18 @@ body {
 
 .site34_icon_col12_iconlienhe {
 	position: fixed;
-	right: 97px;
-    bottom: 150px;
+	right: 0;
+    top: 50%;
+    transform: translate(0 , -50%);
 	display: grid;
 	z-index: 50;
+	border-radius: 5px 0 0 5px;
 	a {
 		text-align: center;
 		display: block;
-		margin: 10px 0;
 		img {
 			max-width: 100%;
+			width: 35px;
 		}
 	}
 	a.top_up {
