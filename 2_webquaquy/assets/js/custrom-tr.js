@@ -38,7 +38,7 @@ $(document).ready(function(){
     return false;
   });
 
-
+/*
   $('.slider_for_pro').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -57,10 +57,7 @@ $(document).ready(function(){
     arrows: true,
     centerMode: false,
     focusOnSelect: true,
-    /*prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/left.png' alt=''></button>",
-    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/right1.png' alt=''></button>",
-    */
-  });
+  });*/
 
   $('.element_relate_pro').slick({
     dots: false,

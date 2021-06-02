@@ -253,6 +253,7 @@ body {
 .header_pc .boxlinkpage > span p {
   color: #fff;
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .header_pc.no_fixed {
@@ -492,8 +493,34 @@ body {
 .section_list_products .item_product:nth-child(3) {
   background: #9b7350;
 }
+.section_list_products .item_product:nth-child(3) .img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.section_list_products .item_product:nth-child(3) .content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
 .section_list_products .item_product:nth-child(4) {
   background: #4a657a;
+}
+.section_list_products .item_product:nth-child(5) {
+  background: #0c131d;
+}
+.section_list_products .item_product:nth-child(6) {
+  background: #9b7350;
+}
+.section_list_products .item_product:nth-child(6) .img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.section_list_products .item_product:nth-child(6) .content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 .section_list_products .item_product .img {
   width: 50%;
@@ -837,8 +864,8 @@ body {
   border-top: 1px dashed #80807f;
 }
 .section_list_product .element_list_product .product_item {
-  width: 25% !important;
-  padding: 25px 0;
+  width: 24% !important;
+  padding: 25px 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   /*&:hover {
@@ -857,11 +884,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.section_list_product .element_list_product .product_item .img_product #circlr {
-  width: 100%;
-}
 .section_list_product .element_list_product .product_item .img_product:hover {
   cursor: pointer;
+}
+.section_list_product .element_list_product .product_item .img_product img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .section_list_product .element_list_product .product_item .info_product {
   width: 100%;
@@ -969,62 +999,18 @@ body {
   overflow: hidden;
   float: left;
 }
-.element_img_product .slider_for_pro {
-  width: 100%;
-  /*
-  height: 600px;*/
-  margin: auto;
-  border: 1px solid #000;
-  overflow: hidden;
+.element_img_product .product_item .img_product:hover {
+  cursor: pointer;
 }
-.element_img_product .slider_for_pro .img {
-  width: 100%;
-  height: 550px;
-  position: relative;
-  overflow: hidden;
-  padding: 30px;
+.element_img_product .product_item .info_product {
+  margin-top: 30px;
 }
-.element_img_product .slider_for_pro .img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.element_img_product .slider_nav_pro {
-  width: 100%;
-  margin: auto;
-  height: auto;
-}
-.element_img_product .slider_nav_pro .img {
-  width: 100%;
-  height: 130px;
-  position: relative;
-  overflow: hidden;
-  padding: 5px;
-  border: 1px solid #000;
-}
-.element_img_product .slider_nav_pro .img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.element_img_product .slider_nav_pro .slick-slide {
-  margin: 7px 5px;
-}
-.element_img_product .slider_nav_pro .slick-prev {
-  left: 0;
-  z-index: 1;
-}
-.element_img_product .slider_nav_pro .slick-prev:before {
-  color: #0d394a;
-}
-.element_img_product .slider_nav_pro .slick-next {
-  right: 0;
-  z-index: 1;
-}
-.element_img_product .slider_nav_pro .slick-next:before {
-  color: #0d394a;
+.element_img_product .product_item .info_product h2 {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+  font-family: "OpenSans", sans-serif;
+  text-align: center;
 }
 
 .info_pro {
@@ -1040,6 +1026,16 @@ body {
   color: #000;
   margin-bottom: 15px;
   font-family: "OpenSans", sans-serif;
+}
+.info_pro > p {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+  font-family: "OpenSans", sans-serif;
+  text-align: left;
+}
+.info_pro > p span {
+  color: #a37e2d;
 }
 .info_pro .short_descriptin {
   margin-top: 30px;
@@ -1060,7 +1056,120 @@ body {
   font-family: "OpenSans", sans-serif;
   text-align: justify;
 }
+.info_pro .short_descriptin .btn_dathangnhanh {
+  background: #009900;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  width: 178px;
+  font-size: 14px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+.info_pro .short_descriptin .btn_dathangnhanh:focus {
+  text-decoration: none;
+}
+.info_pro .short_descriptin .info_detail {
+  border-top: 1px dashed #80807f;
+  border-bottom: 1px dashed #80807f;
+  padding: 25px 0;
+  margin-bottom: 15px;
+}
+.info_pro .short_descriptin .info_detail h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+.info_pro .short_descriptin .info_detail h3 span {
+  display: block;
+  margin-right: 15px;
+}
+.info_pro .short_descriptin .info_detail h3 span img {
+  width: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info_pro .short_descriptin .info_detail h3 a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
 
+.list_img_product_detail .list_img {
+  margin-top: 30px;
+}
+
+.row_img {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Create four equal columns that sits next to each other */
+.column_img {
+  -ms-flex: 25%;
+  /* IE10 */
+  -webkit-box-flex: 24.5%;
+          flex: 24.5%;
+  max-width: 24.5%;
+}
+
+.column_img img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.column_img img:hover {
+  cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column_img {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column_img {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
 .title_pro {
   font-weight: 700;
   font-size: 1.55em;
@@ -1233,39 +1342,6 @@ body {
   width: 50%;
   overflow: hidden;
   padding-left: 30px;
-}
-.site36_form_col12_dkynhanthongtin .form_contact .title_basic h2 {
-  font-family: "OpenSans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 49px;
-  color: #24295B;
-  position: relative;
-}
-.site36_form_col12_dkynhanthongtin .form_contact .title_basic span {
-  position: relative;
-  z-index: 1;
-}
-.site36_form_col12_dkynhanthongtin .form_contact .title_basic span:before {
-  position: absolute;
-  content: "";
-  width: 120px;
-  height: 19px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-29.83%, #9F9E9F), color-stop(-22.11%, #A9A8A9), color-stop(4.61%, #CAC8C8), color-stop(29.21%, #E4E3E3), color-stop(50.7%, #F6F5F5), color-stop(66.7%, #FFFFFF), color-stop(80.4%, #F0EFEE), color-stop(104.8%, #D2D1D1), color-stop(136.89%, #A8A7A8), color-stop(143.75%, #9F9E9F));
-  background: linear-gradient(90deg, #9F9E9F -29.83%, #A9A8A9 -22.11%, #CAC8C8 4.61%, #E4E3E3 29.21%, #F6F5F5 50.7%, #FFFFFF 66.7%, #F0EFEE 80.4%, #D2D1D1 104.8%, #A8A7A8 136.89%, #9F9E9F 143.75%);
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-}
-.site36_form_col12_dkynhanthongtin .form_contact .title_basic p {
-  margin-top: 15px;
-  font-family: "OpenSans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  color: #5A5A5A;
 }
 .site36_form_col12_dkynhanthongtin .form_contact .contact_page {
   width: 100%;
@@ -1455,5 +1531,5 @@ body {
 }
 .site34_icon_col12_iconlienhe a img {
   max-width: 100%;
-  width: 35px;
+  width: 40px;
 }
