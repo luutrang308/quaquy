@@ -1,13 +1,7 @@
 $(document).ready(function(){
   new WOW().init();
   
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
-      $('.section_header').addClass('active');
-    } else {
-      $('.section_header').removeClass('active');
-    }
-  });
+  
 
   $('.form_item img').click(function() {
     $('.form_item').toggleClass('active');
@@ -68,12 +62,64 @@ $(document).ready(function(){
     slidesToScroll: 1,
     adaptiveHeight: true,
     autoplay: true,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
   });
 
   $('.btn_close').click(function() {
     $('.form_item').removeClass('active');
   })
 
+  $('.icon_menu_mobi').click(function(){
+    $('.menu_page').toggleClass('active');
+    $(this).toggleClass('active');
+  })
+
+  var width_mobi = $(window).width();
+  if(width_mobi > 1100) {
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+        $('.section_header').addClass('active');
+      } else {
+        $('.section_header').removeClass('active');
+
+      }
+    });
+  } else {
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+        $('.header_pc').removeClass('no_fixed');
+      } else {
+        $('.header_pc').addClass('no_fixed');
+      }
+    });
+  }
 
 
 
